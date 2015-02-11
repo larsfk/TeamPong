@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		02347A431A8B69AF00E1EBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02347A421A8B69AF00E1EBC0 /* AppDelegate.swift */; };
-		02347A451A8B69AF00E1EBC0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 02347A441A8B69AF00E1EBC0 /* GameScene.sks */; };
 		02347A471A8B69AF00E1EBC0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02347A461A8B69AF00E1EBC0 /* GameScene.swift */; };
 		02347A491A8B69AF00E1EBC0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02347A481A8B69AF00E1EBC0 /* GameViewController.swift */; };
 		02347A4C1A8B69AF00E1EBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02347A4A1A8B69AF00E1EBC0 /* Main.storyboard */; };
 		02347A4E1A8B69AF00E1EBC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02347A4D1A8B69AF00E1EBC0 /* Images.xcassets */; };
 		02347A511A8B69AF00E1EBC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02347A4F1A8B69AF00E1EBC0 /* LaunchScreen.xib */; };
 		02347A5D1A8B69AF00E1EBC0 /* TeamPongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02347A5C1A8B69AF00E1EBC0 /* TeamPongTests.swift */; };
+		02347A681A8B6B2800E1EBC0 /* pong-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 02347A661A8B6B2800E1EBC0 /* pong-background.png */; };
+		02347A691A8B6B2800E1EBC0 /* player-pong.png in Resources */ = {isa = PBXBuildFile; fileRef = 02347A671A8B6B2800E1EBC0 /* player-pong.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,6 @@
 		02347A3D1A8B69AF00E1EBC0 /* TeamPong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamPong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02347A411A8B69AF00E1EBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02347A421A8B69AF00E1EBC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02347A441A8B69AF00E1EBC0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		02347A461A8B69AF00E1EBC0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		02347A481A8B69AF00E1EBC0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		02347A4B1A8B69AF00E1EBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		02347A561A8B69AF00E1EBC0 /* TeamPongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamPongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02347A5B1A8B69AF00E1EBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02347A5C1A8B69AF00E1EBC0 /* TeamPongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPongTests.swift; sourceTree = "<group>"; };
+		02347A661A8B6B2800E1EBC0 /* pong-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pong-background.png"; sourceTree = "<group>"; };
+		02347A671A8B6B2800E1EBC0 /* player-pong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player-pong.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				02347A421A8B69AF00E1EBC0 /* AppDelegate.swift */,
-				02347A441A8B69AF00E1EBC0 /* GameScene.sks */,
 				02347A461A8B69AF00E1EBC0 /* GameScene.swift */,
 				02347A481A8B69AF00E1EBC0 /* GameViewController.swift */,
 				02347A4A1A8B69AF00E1EBC0 /* Main.storyboard */,
 				02347A4D1A8B69AF00E1EBC0 /* Images.xcassets */,
 				02347A4F1A8B69AF00E1EBC0 /* LaunchScreen.xib */,
+				02347A661A8B6B2800E1EBC0 /* pong-background.png */,
+				02347A671A8B6B2800E1EBC0 /* player-pong.png */,
 				02347A401A8B69AF00E1EBC0 /* Supporting Files */,
 			);
 			path = TeamPong;
@@ -200,8 +203,9 @@
 			files = (
 				02347A511A8B69AF00E1EBC0 /* LaunchScreen.xib in Resources */,
 				02347A4E1A8B69AF00E1EBC0 /* Images.xcassets in Resources */,
-				02347A451A8B69AF00E1EBC0 /* GameScene.sks in Resources */,
 				02347A4C1A8B69AF00E1EBC0 /* Main.storyboard in Resources */,
+				02347A691A8B6B2800E1EBC0 /* player-pong.png in Resources */,
+				02347A681A8B6B2800E1EBC0 /* pong-background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
